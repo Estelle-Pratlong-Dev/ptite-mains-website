@@ -1,0 +1,13 @@
+# Contexte projet personnel (ne pas publier)
+
+# Fichiers systeme
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editeur
+.vscode/
+*.code-workspace
+
+# Logs et temporaires
+*.log

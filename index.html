@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les Petites Mains d'Estelle — Gagnières, Gard</title>
+  <meta name="description" content="Développement web, aide informatique, petits travaux, jardinage et garde d'animaux à Gagnières (Gard / Sud Ardèche). Contactez Estelle !" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Les Petites Mains <span>d'Estelle</span></a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="accueil">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-location">📍 Gagnières · Gard / Sud Ardèche</p>
+          <h1>Un coup de main<br />pour tout ce qui compte</h1>
+          <p class="hero-sub">Site web, dépannage informatique, jardinage, petits travaux ou garde de vos animaux — je m'occupe de ce qui vous manque de temps ou de bras.</p>
+          <a href="#contact" class="btn btn-primary">Me contacter</a>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="130" cy="130" r="130" fill="#E6F1FB"/>
+            <!-- écran PC stylisé -->
+            <rect x="60" y="70" width="140" height="95" rx="8" fill="#185FA5"/>
+            <rect x="68" y="78" width="124" height="79" rx="4" fill="#E6F1FB"/>
+            <rect x="110" y="165" width="40" height="10" rx="3" fill="#185FA5"/>
+            <rect x="90" y="175" width="80" height="6" rx="3" fill="#0C447C"/>
+            <!-- petite plante -->
+            <ellipse cx="185" cy="200" rx="12" ry="7" fill="#5F5E5A"/>
+            <path d="M185 193 Q190 178 200 172" stroke="#185FA5" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <circle cx="200" cy="170" r="7" fill="#185FA5" opacity=".7"/>
+            <path d="M185 193 Q178 179 168 175" stroke="#185FA5" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <circle cx="167" cy="173" r="6" fill="#185FA5" opacity=".5"/>
+            <!-- patte de chat -->
+            <ellipse cx="78" cy="200" rx="14" ry="10" fill="#F1EFE8"/>
+            <circle cx="72" cy="194" r="4" fill="#F1EFE8"/>
+            <circle cx="78" cy="192" r="4" fill="#F1EFE8"/>
+            <circle cx="84" cy="194" r="4" fill="#F1EFE8"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Ce que je propose</h2>
+        <p class="section-sub">Des services variés, à taille humaine, près de chez vous.</p>
+
+        <div class="services-grid">
+
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3>Développement web</h3>
+            <p>Création de sites vitrines, du code propre et pensé pour durer, sans jargon inutile. Je m'adapte à votre budget et à vos besoins réels.</p>
+            <ul class="card-list">
+              <li>Création de site vitrine</li>
+              <li>Conseil et accompagnement</li>
+              <li>Nom de domaine et hébergement</li>
+              <li>Référencement de base (SEO)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🖥️</div>
+            <h3>Aide informatique</h3>
+            <p>Votre ordinateur rame, vous ne savez pas comment installer ce que vous venez d'acheter, ou vous voulez vous simplifier la vie avec le numérique ? Je me déplace ou interviens à distance.</p>
+            <ul class="card-list">
+              <li>Nettoyage et optimisation de PC</li>
+              <li>Sauvegarde et mise en place d'un cloud</li>
+              <li>Installation de caméras de surveillance et objets connectés</li>
+              <li>Branchement et configuration TV, box, streaming (Netflix, etc.)</li>
+              <li>Petites manipulations techniques du quotidien</li>
+              <li>Accompagnement pour les démarches administratives en ligne</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🔨</div>
+            <h3>Petits travaux</h3>
+            <p>Montage de meubles, petites réparations, manutention légère… Les petits chantiers qui traînent depuis trop longtemps.</p>
+            <ul class="card-list">
+              <li>Montage / assemblage</li>
+              <li>Réparations courantes</li>
+              <li>Rangement et organisation</li>
+              <li>Petites créations bois sur mesure</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🌿</div>
+            <h3>Jardinage & entretien extérieur</h3>
+            <p>Entretien régulier ou ponctuel de votre jardin et de vos extérieurs — pour que tout reste propre et agréable sans que vous ayez à vous en occuper.</p>
+            <ul class="card-list">
+              <li>Tonte et désherbage</li>
+              <li>Taille de haies et arbustes</li>
+              <li>Ramassage et nettoyage</li>
+              <li>Nettoyage au karcher (terrasse, allée, façade)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🧹</div>
+            <h3>Débarras</h3>
+            <p>Vous devez vider une cave, un garage, un grenier — suite à un déménagement, une succession ou simplement pour faire de la place ? Je m'occupe du tri, de l'évacuation et de la remise en état.</p>
+            <ul class="card-list">
+              <li>Débarras de cave, garage, grenier</li>
+              <li>Tri et évacuation (déchetterie, don)</li>
+              <li>Remise en état après débarras</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🐾</div>
+            <h3>Garde d'animaux</h3>
+            <p>Vous partez en week-end ou en vacances ? Je m'occupe de vos compagnons à poils ou à plumes avec attention et bienveillance.</p>
+            <ul class="card-list">
+              <li>Garde à votre domicile</li>
+              <li>Visites quotidiennes</li>
+              <li>Promenades</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🛒</div>
+            <h3>Courses & commissions</h3>
+            <p>Vous n'êtes pas disponible, pas mobile, ou vous avez juste besoin d'un coup de main ponctuel ? Je peux prendre en charge vos petites courses ou commissions du quotidien.</p>
+            <ul class="card-list">
+              <li>Courses alimentaires</li>
+              <li>Récupération de colis ou achats</li>
+              <li>Petites démarches de proximité</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">📦</div>
+            <h3>Aide à la revente en ligne</h3>
+            <p>Vous avez des affaires à vendre mais vous ne savez pas par où commencer ? Je m'occupe des photos, des descriptions et de la mise en ligne sur Leboncoin, Vinted ou autres plateformes.</p>
+            <ul class="card-list">
+              <li>Photos et mise en valeur des objets</li>
+              <li>Rédaction et publication des annonces</li>
+              <li>Suivi et gestion des échanges</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🎓</div>
+            <h3>Soutien scolaire & numérique</h3>
+            <p>Votre enfant galère avec les outils numériques, les plateformes scolaires ou certaines matières ? Je peux l'accompagner avec patience et pédagogie.</p>
+            <ul class="card-list">
+              <li>Prise en main de Pronote, ENT et autres outils</li>
+              <li>Aide aux devoirs (selon matières)</li>
+              <li>Initiation à l'informatique pour les plus jeunes</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section class="apropos" id="apropos">
+      <div class="container apropos-inner">
+        <div class="apropos-visual" aria-hidden="true">
+          <div class="avatar-placeholder">E</div>
+        </div>
+        <div class="apropos-text">
+          <h2>Bonjour, je suis Estelle</h2>
+          <p>Basée à Gagnières, au carrefour du Gard et de l'Ardèche, je propose mes services aux particuliers et aux petites entreprises de la région.</p>
+          <p>J'ai une formation en développement web et une vraie curiosité pour les outils numériques, mais aussi le goût du travail concret, du contact humain et des petits gestes qui font la différence au quotidien.</p>
+          <p>Ce qui me motive ? Rendre service vraiment — pas juste cocher une case. Que ce soit pour créer votre site, dépanner votre ordinateur, entretenir votre jardin ou veiller sur votre chien, je m'implique avec soin.</p>
+          <a href="#contact" class="btn btn-secondary">Discutons de votre projet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-intro">
+          <h2>Parlons-en</h2>
+          <p>Un projet, une question, un doute ? Écrivez-moi, je réponds rapidement et sans engagement.</p>
+
+          <ul class="contact-coords">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:">votre@email.fr</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 5.49 5.49l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 17.42l.92-.5z"/></svg>
+              <a href="tel:+33600000000">06 00 00 00 00</a>
+            </li>
+          </ul>
+
+          <p class="contact-zone">📍 Zone d'intervention : Gagnières et environs<br />(Gard / Sud Ardèche)</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Marie Dupont" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Votre email</label>
+            <input type="email" id="email" name="email" placeholder="marie@exemple.fr" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Service souhaité</label>
+            <select id="service" name="service">
+              <option value="">— Choisissez un service —</option>
+              <option value="web">Développement web</option>
+              <option value="info">Aide informatique</option>
+              <option value="travaux">Petits travaux</option>
+              <option value="jardinage">Jardinage &amp; entretien extérieur</option>
+              <option value="debarras">Débarras</option>
+              <option value="animaux">Garde d'animaux</option>
+              <option value="courses">Courses &amp; commissions</option>
+              <option value="revente">Aide à la revente en ligne</option>
+              <option value="soutien">Soutien scolaire &amp; numérique</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin en quelques mots…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+          <p class="form-notice" id="form-notice" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Les Petites Mains d'Estelle</p>
+      <p class="footer-location">Gagnières · Gard / Sud Ardèche</p>
+      <nav class="footer-nav" aria-label="Navigation pied de page">
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> Estelle Pratlong — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
