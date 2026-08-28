@@ -54,7 +54,7 @@ Il pourra évoluer ou être abandonné en fonction de la suite donnée au projet
 
 Une version de démonstration du site est disponible en ligne :
 
-👉 **[Voir le site](URL_DE_LA_DEMO)**
+👉 **[Voir le site](https://estelle-pratlong-dev.github.io/ptite-mains-website/)**
 
 ## À propos
 
