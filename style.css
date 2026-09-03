@@ -384,6 +384,34 @@ h3 { font-size: 1.15rem; color: var(--bleu-fonce); margin-bottom: .35rem; }
 
 .footer-copy { font-size: .8rem; color: rgba(255,255,255,.5); }
 
+.footer-credit { font-size: .75rem; color: rgba(255,255,255,.5); }
+.footer-credit a { color: rgba(255,255,255,.7); text-decoration: none; }
+.footer-credit a:hover { color: var(--blanc); text-decoration: underline; }
+
+/* ===== MENTIONS LÉGALES ===== */
+.legal {
+  padding: 3.5rem 0 5rem;
+  max-width: 720px;
+}
+
+.legal-retour {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--bleu);
+  font-weight: 600;
+}
+.legal-retour:hover { text-decoration: underline; }
+
+.legal h2 {
+  font-size: 1.2rem;
+  margin: 2rem 0 .6rem;
+}
+
+.legal p { margin-bottom: .75rem; max-width: 65ch; }
+
+.legal a { color: var(--bleu); font-weight: 500; }
+.legal a:hover { text-decoration: underline; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
