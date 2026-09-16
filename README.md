@@ -1,66 +1,40 @@
 # Les Petites Mains d'Estelle
 
-Site vitrine réalisé pour matérialiser un projet d'activité multiservices de proximité.
+Site vitrine prototype pour un projet d'activité multiservices de proximité (aide numérique,
+petits travaux, garde d'animaux...) à Gagnières (Gard).
 
-> 💡 Projet personnel — prototype
+🌐 **[Voir le site en ligne](https://ptites-mains.estelle-pratlong.fr/)**
 
-## Le projet
+---
 
-Les Petites Mains d'Estelle est né d'une réflexion autour de la création d'une activité proposant différents services de proximité : assistance numérique, aide administrative, services du quotidien et petits travaux.
+## Le projet en bref
 
-Le site a été conçu comme un prototype permettant de structurer cette idée, organiser les différentes prestations envisagées et visualiser la manière dont l'activité pourrait être présentée au public.
-
-L'objectif était avant tout de transformer une idée en un projet concret et navigable.
+Avant de me lancer dans une activité réelle, j'ai voulu structurer l'idée sous forme d'un site
+concret : organiser l'offre de services, tester une identité visuelle, et voir comment
+l'activité pourrait être présentée au public. Le projet reste exploratoire et n'a pas vocation
+commerciale à ce jour.
 
 ## Fonctionnalités
 
-- Présentation de l'activité
-- Organisation des prestations par catégories
-- Présentation détaillée des différents services
-- Navigation responsive
-- Interface adaptée aux mobiles et tablettes
-- Formulaire de contact avec validation côté client
+- **Présentation de l'activité** et de l'offre de services par catégories.
+- **Formulaire de contact** avec validation côté client.
+- **Interface responsive**, adaptée mobile et tablette.
 
-## Choix techniques
+## Choix techniques notables
 
-Le projet repose volontairement sur une architecture simple, sans framework ni CMS.
+- **Aucune dépendance externe** : HTML/CSS/JS vanilla, volontairement, pour un site vitrine
+  simple à maintenir sans outillage.
 
-Il est développé en HTML, CSS et JavaScript vanilla afin de conserver un site vitrine léger et facilement maintenable.
+## Stack
 
-## Stack technique
-
-- HTML5
-- CSS3
-- JavaScript vanilla
-- Git
+HTML5 · CSS3 · JavaScript vanilla · Git
 
 ## Développement assisté par IA
 
-Ce prototype a été réalisé avec l'assistance d'outils d'intelligence artificielle.
-
-L'IA a été utilisée comme outil de conception et d'aide au développement afin de matérialiser rapidement le projet et d'explorer différentes possibilités de présentation.
-
-Le projet reste avant tout une expérimentation autour d'une idée d'activité et de sa traduction sous la forme d'un site web.
-
-## Statut
-
-💡 **Prototype / projet exploratoire**
-
-Le projet présenté dans ce dépôt correspond à une réflexion personnelle et ne représente pas une activité actuellement commercialisée.
-
-Il pourra évoluer ou être abandonné en fonction de la suite donnée au projet.
-
-## Démonstration
-
-Une version de démonstration du site est disponible en ligne :
-
-👉 **[Voir le site](https://estelle-pratlong-dev.github.io/ptite-mains-website/)**
+Ce prototype a été réalisé avec l'assistance d'outils d'intelligence artificielle, utilisés
+comme aide à la conception et au développement.
 
 ## À propos
 
-Ce projet fait partie de mon portfolio et illustre notamment :
-
-- la conception d'un site vitrine responsive ;
-- l'organisation et la hiérarchisation d'une offre de services ;
-- le développement front-end sans framework ;
-- l'utilisation de l'IA comme outil d'assistance à la conception et au développement.
+Ce projet fait partie de mon portfolio et illustre la conception d'un site vitrine responsive à
+partir d'une idée d'activité, sans framework.
