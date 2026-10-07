@@ -1,0 +1,30 @@
+# Configuration pour un hébergement Apache, site à la racine du domaine.
+Options -Indexes
+DirectoryIndex index.php
+ErrorDocument 404 /404.php
+
+# Affiche notre page 404 pour les fichiers PHP inexistants.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule \.php$ /404.php [L]
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Une seule URL pour l’accueil : / plutôt que /index.php.
+    RewriteCond %{THE_REQUEST} \s/+index\.php(?:[?\s]) [NC]
+    RewriteRule ^index\.php$ / [R=301,L]
+
+    # Évite un accès HTTP direct aux fichiers PHP internes.
+    RewriteRule ^(?:config|includes|data)/ - [F,L]
+</IfModule>
+
+# Les documents de développement sont livrés, mais ne doivent pas être servis au public.
+<FilesMatch "^(?:.*\.md|LICENSE)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

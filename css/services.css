@@ -1,0 +1,262 @@
+/***************************************************************
+Hero et navigation
+***************************************************************/
+.services-hero {
+    display: grid;
+    grid-template-columns: 1.7fr 0.7fr;
+    gap: 3rem;
+    align-items: center;
+}
+.services-hero > div > p:not(.eyebrow) {
+    font-size: 1.3rem;
+    max-width: 680px;
+}
+.category-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 2rem;
+}
+.category-links a {
+    padding: 0.7rem 1rem;
+    background: var(--blush);
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+}
+.category-links a:hover {
+    background: var(--card-surface);
+}
+.service-note {
+    padding: 2.3rem;
+    background: var(--brand);
+    color: var(--surface);
+    border-radius: 42px 12px 42px 12px;
+    transform: rotate(2deg);
+}
+.service-note .eyebrow,
+.service-note p {
+    color: var(--surface);
+}
+.service-note p {
+    font-size: 2.6rem;
+    line-height: 1.15;
+    margin-block: 1.5rem;
+}
+.service-note > span:last-child {
+    font-size: 0.95rem;
+}
+/***************************************************************
+Familles de services
+***************************************************************/
+.family-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.family-heading .eyebrow {
+    margin-bottom: 0.65rem;
+}
+.family-number {
+    color: var(--brand);
+    font-size: 4.5rem;
+    line-height: 1;
+    padding-right: 1.5rem;
+    border-right: 1px solid var(--border);
+}
+.family-heading h2 {
+    margin-bottom: 0;
+}
+.family-surface {
+    background: var(--blush);
+    margin-block: 2rem;
+    padding-block: 1rem;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+.service-card-detail {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 2rem;
+}
+.service-card-detail h3 {
+    font-size: 1.8rem;
+}
+.service-card-detail p {
+    font-size: 1.1rem;
+}
+.service-card-detail ul {
+    padding-left: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+}
+.service-card-detail li {
+    color: var(--muted);
+    margin-bottom: 0.55rem;
+}
+.blush-card {
+    background: var(--blush);
+}
+.wide-card {
+    grid-column: 1 / -1;
+}
+.wide-card ul {
+    columns: 2;
+}
+/***************************************************************
+Services complémentaires visibles et contact par famille
+***************************************************************/
+.digital-grid,
+#quotidien > .service-grid {
+    grid-template-columns: 1fr;
+}
+
+.digital-grid .service-card-detail ul {
+    columns: 2;
+    column-gap: 2rem;
+}
+
+.digital-grid .service-card-detail li {
+    break-inside: avoid;
+}
+
+.secondary-service {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.secondary-service h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.secondary-content {
+    max-width: 850px;
+}
+
+.secondary-content p,
+.secondary-content li {
+    font-size: 1rem;
+    color: var(--muted);
+}
+
+.family-contact {
+    margin-top: 1.7rem;
+}
+
+/***************************************************************
+Mises en avant et photos
+***************************************************************/
+.digital-feature {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    margin-bottom: 1.5rem;
+}
+.digital-feature img {
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 14px 0 0 14px;
+}
+.featured-card {
+    border-radius: 0 14px 14px 0;
+    background: var(--blush);
+}
+.home-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1.5rem;
+    background: var(--brand);
+    border-radius: 14px;
+    overflow: hidden;
+}
+.home-feature img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center 60%;
+}
+.home-feature p {
+    align-self: center;
+    padding: 2rem;
+    color: var(--surface);
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+.animal-feature {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+}
+.animal-feature img {
+    width: 100%;
+    height: 100%;
+    max-height: 560px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+.small-request {
+    text-align: center;
+    max-width: 1000px;
+}
+.small-request p {
+    max-width: 620px;
+    margin-inline: auto;
+}
+/***************************************************************
+Responsive
+***************************************************************/
+@media (max-width: 800px) {
+    .services-hero {
+        grid-template-columns: 1fr;
+    }
+    .service-note {
+        max-width: 440px;
+        transform: none;
+    }
+    .service-note p {
+        font-size: 2rem;
+    }
+    .service-grid,
+    .digital-feature,
+    .home-feature,
+    .animal-feature {
+        grid-template-columns: 1fr;
+    }
+    .digital-feature img {
+        height: 240px;
+        border-radius: 14px 14px 0 0;
+    }
+    .featured-card {
+        border-radius: 0 0 14px 14px;
+    }
+    .animal-feature img {
+        height: 300px;
+    }
+    .wide-card ul,
+    .digital-grid .service-card-detail ul {
+        columns: 1;
+    }
+    .service-card-detail {
+        padding: 1.5rem;
+    }
+    .family-number {
+        font-size: 3rem;
+        padding-right: 0.9rem;
+    }
+    .family-heading {
+        gap: 1rem;
+    }
+}

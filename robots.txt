@@ -1,0 +1,4 @@
+# Le noindex de la version de travail est dans les pages PHP.
+# Autoriser l’exploration permet aux moteurs de lire cette consigne.
+User-agent: *
+Disallow:
